@@ -8,53 +8,33 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #282c35;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(to right, #292b2c, #536872); /* 新的渐变背景色 */
-            color: #ffffff;
         }
 
         header {
             text-align: center;
             padding: 2em;
-            background: linear-gradient(to right, #4CAF50, #00d4ff);
+            background-color: #1e232b;
         }
 
         h1 {
             font-size: 3em;
             margin-bottom: 0.5em;
-            color: #ffffff;
+            color: #61dafb;
         }
 
         h3 {
             font-size: 1.5em;
             margin-top: 0;
-            color: #ffffff;
+            color: #ffa500;
         }
 
         p {
             font-size: 1.2em;
-            color: #c1c1c1;
-        }
-
-        .projects {
-            width: 70%; /* 调整项目展示区域的宽度 */
-            margin: 2em 0;
-            padding: 1em;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
-
-        .project {
-            margin-bottom: 1em;
-            padding: 1.5em; /* 调整项目的内边距 */
-            background: linear-gradient(to right, #ff512f, #dd2476); /* 新的项目渐变背景色 */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #abb2bf;
         }
 
         .social-icons {
@@ -64,7 +44,38 @@
         .social-icons a {
             margin-right: 1em;
             font-size: 1.5em;
-            color: #ffffff;
+            color: #61dafb;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .projects {
+            background-color: #1e232b;
+            border-radius: 10px;
+            margin-top: 2em;
+        }
+
+        .project-title {
+            font-size: 2em;
+            color: #61dafb;
+        }
+
+        .project-description {
+            font-size: 1.2em;
+            color: #abb2bf;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #1e232b;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            color: #abb2bf;
         }
     </style>
 </head>
@@ -73,26 +84,35 @@
     <header>
         <h1>Ceylan Liu</h1>
         <h3>Web Developer</h3>
-        <p>Welcome to my personal page! I'm passionate about creating awesome web experiences.</p>
+        <p>Welcome to my vibrant and colorful personal page! Let's create amazing things together.</p>
+        <div class="social-icons">
+            <a href="https://github.com/CeylanLiu" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
+            <!-- Add more social links as needed -->
+        </div>
     </header>
 
-    <div class="projects">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Insert a captivating description about yourself and your passion for web development here.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="project-title">My Projects</h2>
         <div class="project">
-            <h2>Project 1</h2>
-            <p>Description of Project 1 goes here.</p>
+            <h3>Project 1</h3>
+            <p class="project-description">Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="project">
-            <h2>Project 2</h2>
-            <p>Description of Project 2 goes here.</p>
+            <h3>Project 2</h3>
+            <p class="project-description">Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <!-- Add more projects as needed -->
-    </div>
+    </section>
 
-    <div class="social-icons">
-        <a href="https://github.com/CeylanLiu" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
-        <!-- Add more social links as needed -->
-    </div>
+    <footer>
+        <p class="contact-info">Feel free to reach out! Email: your.email@example.com</p>
+    </footer>
 
 </body>
 </html>
